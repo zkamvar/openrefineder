@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
 
+ORV='3.3'
+
 # Download OpenRefine https://github.com/OpenRefine/OpenRefine/
-wget -q -O openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-linux-3.2.tar.gz
+wget -q -O openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/${ORV}/openrefine-linux-${ORV}.tar.gz
 mkdir -p openrefine
 tar -xzf openrefine.tar.gz -C openrefine --strip 1
 rm openrefine.tar.gz
